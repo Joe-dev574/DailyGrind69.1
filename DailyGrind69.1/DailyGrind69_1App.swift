@@ -12,7 +12,7 @@ import SwiftData
 struct DailyGrind69_1App: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Task.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,7 +25,7 @@ struct DailyGrind69_1App: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TaskListScreen()
         }
         .modelContainer(sharedModelContainer)
     }

@@ -7,9 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37967B1F2C7F944A001186FC /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B1E2C7F944A001186FC /* Focus.swift */; };
+		37967B212C7F946F001186FC /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B202C7F946F001186FC /* Note.swift */; };
+		37967B242C7F94D0001186FC /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B232C7F94CF001186FC /* HapticManager.swift */; };
+		37967B262C7F950A001186FC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B252C7F950A001186FC /* UIColor.swift */; };
+		37967B282C7F9526001186FC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B272C7F9526001186FC /* Color.swift */; };
+		37967B2B2C7F9E65001186FC /* AddTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B2A2C7F9E65001186FC /* AddTaskScreen.swift */; };
+		37967B302C7FA2ED001186FC /* FocusListSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B2C2C7FA2ED001186FC /* FocusListSamples.swift */; };
+		37967B312C7FA2ED001186FC /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B2D2C7FA2ED001186FC /* PreviewContainer.swift */; };
+		37967B322C7FA2ED001186FC /* TaskSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B2E2C7FA2ED001186FC /* TaskSamples.swift */; };
+		37967B342C7FB582001186FC /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B332C7FB582001186FC /* TaskCardView.swift */; };
+		37967B362C7FB9BE001186FC /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B352C7FB9BE001186FC /* EditTaskView.swift */; };
+		37967B382C7FC1B0001186FC /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B372C7FC1B0001186FC /* View+Extension.swift */; };
+		37967B3A2C7FDF3D001186FC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37967B392C7FDF3D001186FC /* Date+Extension.swift */; };
 		37CA51EA2C7F5B4000B5AD4F /* DailyGrind69_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA51E92C7F5B4000B5AD4F /* DailyGrind69_1App.swift */; };
-		37CA51EC2C7F5B4000B5AD4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA51EB2C7F5B4000B5AD4F /* ContentView.swift */; };
-		37CA51EE2C7F5B4000B5AD4F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA51ED2C7F5B4000B5AD4F /* Item.swift */; };
+		37CA51EC2C7F5B4000B5AD4F /* TaskListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA51EB2C7F5B4000B5AD4F /* TaskListScreen.swift */; };
+		37CA51EE2C7F5B4000B5AD4F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA51ED2C7F5B4000B5AD4F /* Task.swift */; };
 		37CA51F02C7F5B4100B5AD4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CA51EF2C7F5B4100B5AD4F /* Assets.xcassets */; };
 		37CA51F42C7F5B4100B5AD4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CA51F32C7F5B4100B5AD4F /* Preview Assets.xcassets */; };
 		37CA51FE2C7F5B4100B5AD4F /* DailyGrind69_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA51FD2C7F5B4100B5AD4F /* DailyGrind69_1Tests.swift */; };
@@ -35,10 +48,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37967B1E2C7F944A001186FC /* Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus.swift; sourceTree = "<group>"; };
+		37967B202C7F946F001186FC /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		37967B232C7F94CF001186FC /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		37967B252C7F950A001186FC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		37967B272C7F9526001186FC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		37967B2A2C7F9E65001186FC /* AddTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskScreen.swift; sourceTree = "<group>"; };
+		37967B2C2C7FA2ED001186FC /* FocusListSamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusListSamples.swift; sourceTree = "<group>"; };
+		37967B2D2C7FA2ED001186FC /* PreviewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
+		37967B2E2C7FA2ED001186FC /* TaskSamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskSamples.swift; sourceTree = "<group>"; };
+		37967B332C7FB582001186FC /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
+		37967B352C7FB9BE001186FC /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
+		37967B372C7FC1B0001186FC /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		37967B392C7FDF3D001186FC /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		37CA51E62C7F5B4000B5AD4F /* DailyGrind69.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyGrind69.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37CA51E92C7F5B4000B5AD4F /* DailyGrind69_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGrind69_1App.swift; sourceTree = "<group>"; };
-		37CA51EB2C7F5B4000B5AD4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		37CA51ED2C7F5B4000B5AD4F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		37CA51EB2C7F5B4000B5AD4F /* TaskListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListScreen.swift; sourceTree = "<group>"; };
+		37CA51ED2C7F5B4000B5AD4F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		37CA51EF2C7F5B4100B5AD4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37CA51F12C7F5B4100B5AD4F /* DailyGrind69_1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyGrind69_1.entitlements; sourceTree = "<group>"; };
 		37CA51F32C7F5B4100B5AD4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -74,6 +100,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37967B1D2C7F9414001186FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37CA51ED2C7F5B4000B5AD4F /* Task.swift */,
+				37967B1E2C7F944A001186FC /* Focus.swift */,
+				37967B202C7F946F001186FC /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		37967B222C7F94C1001186FC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				37967B232C7F94CF001186FC /* HapticManager.swift */,
+				37967B252C7F950A001186FC /* UIColor.swift */,
+				37967B272C7F9526001186FC /* Color.swift */,
+				37967B372C7FC1B0001186FC /* View+Extension.swift */,
+				37967B392C7FDF3D001186FC /* Date+Extension.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		37967B292C7F9544001186FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37CA51EB2C7F5B4000B5AD4F /* TaskListScreen.swift */,
+				37967B2A2C7F9E65001186FC /* AddTaskScreen.swift */,
+				37967B332C7FB582001186FC /* TaskCardView.swift */,
+				37967B352C7FB9BE001186FC /* EditTaskView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37967B2F2C7FA2ED001186FC /* SampleProjects */ = {
+			isa = PBXGroup;
+			children = (
+				37967B2C2C7FA2ED001186FC /* FocusListSamples.swift */,
+				37967B2D2C7FA2ED001186FC /* PreviewContainer.swift */,
+				37967B2E2C7FA2ED001186FC /* TaskSamples.swift */,
+			);
+			name = SampleProjects;
+			path = "../../../../Downloads/DailyGrind1.0-main/DailyGrind1.0/Preview Content/SampleProjects";
+			sourceTree = "<group>";
+		};
 		37CA51DD2C7F5B4000B5AD4F = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +167,10 @@
 		37CA51E82C7F5B4000B5AD4F /* DailyGrind69.1 */ = {
 			isa = PBXGroup;
 			children = (
+				37967B222C7F94C1001186FC /* Support */,
 				37CA51E92C7F5B4000B5AD4F /* DailyGrind69_1App.swift */,
-				37CA51EB2C7F5B4000B5AD4F /* ContentView.swift */,
-				37CA51ED2C7F5B4000B5AD4F /* Item.swift */,
+				37967B292C7F9544001186FC /* Views */,
+				37967B1D2C7F9414001186FC /* Models */,
 				37CA51EF2C7F5B4100B5AD4F /* Assets.xcassets */,
 				37CA51F12C7F5B4100B5AD4F /* DailyGrind69_1.entitlements */,
 				37CA51F22C7F5B4100B5AD4F /* Preview Content */,
@@ -110,6 +181,7 @@
 		37CA51F22C7F5B4100B5AD4F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				37967B2F2C7FA2ED001186FC /* SampleProjects */,
 				37CA51F32C7F5B4100B5AD4F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -262,9 +334,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37CA51EC2C7F5B4000B5AD4F /* ContentView.swift in Sources */,
-				37CA51EE2C7F5B4000B5AD4F /* Item.swift in Sources */,
+				37967B312C7FA2ED001186FC /* PreviewContainer.swift in Sources */,
+				37967B212C7F946F001186FC /* Note.swift in Sources */,
+				37967B262C7F950A001186FC /* UIColor.swift in Sources */,
+				37967B362C7FB9BE001186FC /* EditTaskView.swift in Sources */,
+				37967B322C7FA2ED001186FC /* TaskSamples.swift in Sources */,
+				37967B3A2C7FDF3D001186FC /* Date+Extension.swift in Sources */,
+				37967B302C7FA2ED001186FC /* FocusListSamples.swift in Sources */,
+				37CA51EC2C7F5B4000B5AD4F /* TaskListScreen.swift in Sources */,
+				37967B382C7FC1B0001186FC /* View+Extension.swift in Sources */,
+				37967B2B2C7F9E65001186FC /* AddTaskScreen.swift in Sources */,
+				37CA51EE2C7F5B4000B5AD4F /* Task.swift in Sources */,
+				37967B1F2C7F944A001186FC /* Focus.swift in Sources */,
+				37967B282C7F9526001186FC /* Color.swift in Sources */,
+				37967B242C7F94D0001186FC /* HapticManager.swift in Sources */,
 				37CA51EA2C7F5B4000B5AD4F /* DailyGrind69_1App.swift in Sources */,
+				37967B342C7FB582001186FC /* TaskCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
