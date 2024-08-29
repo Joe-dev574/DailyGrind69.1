@@ -25,13 +25,15 @@ struct TaskListScreen: View {
     var body: some View {
         NavigationStack {
             VStack{
-                List {
-                    ForEach(tasks) { task in
-                        NavigationLink(destination: EditTaskView() ){
-                            TaskRowView(task: task)
+                ScrollView {
+                    LazyVStack {
+                        ForEach(tasks) { task in
+                            NavigationLink(destination: EditTaskView() ){
+                                TaskRowView(task: task)
+                            }
                         }
+                        .onDelete(perform: deleteTasks)
                     }
-                    .onDelete(perform: deleteTasks)
                 }
             }
             .toolbar {
