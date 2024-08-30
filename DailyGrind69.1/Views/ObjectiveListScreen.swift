@@ -16,41 +16,47 @@ enum SortOrder: String, Identifiable, CaseIterable {
         self
     }
 }
-struct TaskListScreen: View {
+struct ObjectiveListScreen: View {
    
     @Environment(\.modelContext) private var modelContext
-    @Query private var tasks: [Task]
-    @State private var addNewTask: Bool = false
+    @Query private var objectives: [Objective]
+    @State private var addNewObjective: Bool = false
     
     var body: some View {
         NavigationStack {
             VStack{
-                ScrollView {
-                    LazyVStack {
-                        ForEach(tasks) { task in
+              
+                ScrollView(.vertical) {
+                    LazyVStack(spacing:10) {
+                        ForEach(objectives) { objective in
                             NavigationLink(destination: EditTaskView() ){
-                                TaskRowView(task: task)
+                                TaskRowView(objective: objective)   .strikethrough(objective.isComplete, pattern: .solid, color: .black)
                             }
                         }
                         .onDelete(perform: deleteTasks)
                     }
-                }
+                }.scrollIndicators(.hidden)
+                    .frame(maxWidth: .infinity)
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing){
                     Button(action: {
-                        addNewTask = true
+                        addNewObjective = true
                         HapticManager.notification(type: .success)
                     }, label: {
                         Image(systemName: "plus")
                     })
+                   
+                }
+                ToolbarItem(placement: .principal) {
+                                       HeaderView()
                 }
             }
         }
         
-        .sheet(isPresented: $addNewTask) {
-            AddTaskScreen()
-                .presentationDetents([.large])
+        .sheet(isPresented: $addNewObjective) {
+            AddObjectiveScreen()
+                .presentationDetents([.medium, .large])
         }
     }
     
@@ -58,7 +64,7 @@ struct TaskListScreen: View {
     private func deleteTasks(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
-                modelContext.delete(tasks[index])
+                modelContext.delete(objectives[index])
             }
         }
     }
@@ -66,7 +72,7 @@ struct TaskListScreen: View {
     
 #Preview {
     
-    return TaskListScreen()
+    return ObjectiveListScreen()
     
 }
     

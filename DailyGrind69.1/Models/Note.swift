@@ -19,6 +19,6 @@ class Note {
         self.page = page
     }
     
-    var task: Task?
+    var task: Objective?
 }
 

@@ -12,7 +12,7 @@ import SwiftData
 class Focus {
     var name: String
     var color: String
-    var projects: [Task]?
+    var projects: [Objective]?
     
     init(name: String, color: String) {
         self.name = name

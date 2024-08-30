@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddTaskScreen: View {
+struct AddObjectiveScreen: View {
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) var dismiss
     @State private var taskColor: String = "TaskColor 4"
@@ -25,16 +25,15 @@ struct AddTaskScreen: View {
                     .font(.headline)
                     .foregroundStyle(.black)
                     .padding(.horizontal, 15)
-                    .padding(.vertical, 5)
+                    .padding(.top, 25)
                 
-                TextField("Briefly Describe it...", text: $briefDescription)
-                    .padding()
-                    .background(Color.gray.opacity(0.2).cornerRadius(7.5))
+                Text("Brief Description")
+                TextEditor( text: $briefDescription)
+                    .lineLimit(4)
                     .font(.headline)
                     .foregroundStyle(.black)
-                    .padding(.horizontal, 15)
-                    .padding(.vertical,5)
-                
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(uiColor: .tertiarySystemFill), lineWidth: 3))
+                    .frame( height: 100)
                 Divider()
                 
                 VStack(alignment: .leading, spacing: 8, content: {
@@ -80,25 +79,25 @@ struct AddTaskScreen: View {
             }
             .padding()
             .toolbar{
-               
-                    ToolbarItem(placement: .topBarTrailing, content: {
-                        Button("Save") {
-                            let newTask = Task(title: title, briefDescription: briefDescription, dateAdded: dateAdded,   tint: taskColor)
-                            context.insert(newTask)
-                            dismiss()
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .disabled(title == "" || briefDescription == "")
-                    })
+                
+                ToolbarItem(placement: .topBarTrailing, content: {
+                    Button("Save") {
+                        let newTask = Objective(title: title, briefDescription: briefDescription, dateAdded: dateAdded,   tint: taskColor)
+                        context.insert(newTask)
+                        dismiss()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .disabled(title == "" || briefDescription == "")
+                })
                 ToolbarItem(placement: .topBarLeading, content: {
                     
                 })
-                }
             }
         }
     }
-        
-   
+}
+
+
 #Preview {
-    AddTaskScreen()
+    AddObjectiveScreen()
 }

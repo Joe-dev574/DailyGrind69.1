@@ -9,12 +9,12 @@ import SwiftUI
 import SwiftData
 
 @Model
-final class Task: Identifiable{
+final class Objective: Identifiable{
     var id: UUID
     var title: String
     var briefDescription: String
     var dateAdded: Date
-    var dateCreated: Date
+    var dateStarted: Date
     var dateCompleted: Date
     var isComplete: Bool
     var tint: String
@@ -30,7 +30,7 @@ final class Task: Identifiable{
         title: String,
         briefDescription: String,
         dateAdded: Date = Date.now,
-        dateCreated: Date = Date.distantPast,
+        dateStarted: Date = Date.distantPast,
         dateCompleted: Date = Date.distantPast,
         isComplete: Bool = false,
         tint: String,
@@ -41,7 +41,7 @@ final class Task: Identifiable{
         self.title = title
         self.briefDescription = briefDescription
         self.dateAdded = dateAdded
-        self.dateCreated = dateCreated
+        self.dateStarted = dateStarted
         self.dateCompleted = dateCompleted
         self.isComplete = isComplete
         self.tint = tint
